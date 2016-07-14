@@ -1,0 +1,23 @@
+<template name="unitPage">
+    <h2 class="custom-heading ui center aligned header">
+        <div class="ui massive breadcrumb">
+            <a class="section" href="/">Portfolios</a>
+            <i class="right chevron icon divider"></i>
+            <a class="section" href="/portfolios/{{buildingLink}}">Buildings</a>
+
+            <i class="right chevron icon divider"></i>
+            {{#if viewArchiveUnits}}
+                <div class="active section">Archive Units</div>
+            {{else}}
+                <div class="active section">Units</div>
+            {{/if}}
+        </div>
+    </h2>
+    {{#unless viewArchiveUnits}}
+        {{>unitSubmit}}
+    {{/unless}}
+    <div class="ui section divider"></div>
+
+    {{>unitList}}
+
+</template>

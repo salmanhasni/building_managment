@@ -1,0 +1,49 @@
+<template name="_loginButtonsAdditionalLoggedInDropdownActions">
+    <div class="item" id="update-profile">
+        <i class="setting icon"></i>
+        Change Profile Settings
+    </div>
+</template>
+
+<template name="profileSettings">
+    <div class="ui modal profile">
+        <i class="close icon"></i>
+        <div class="header">
+            Profile Settings
+        </div>
+
+        <div class="content profile">
+
+            <form class="ui form">
+            {{#if isInRole 'admin'}}
+                <div class="field">
+                    <label>First Name</label>
+                    <input name="fname" value={{fname}} class="profile-field" id="fname" maxlength="50" />
+                </div>
+
+                <div class="field">
+                    <label>Last Name</label>
+                    <input name="lname" value={{lname}} class="profile-field" id="lname" maxlength="50" />
+                </div>
+            {{/if}}
+                <div class="field">
+                    <label>Phone Number</label>
+                    <input name="phone" value={{phone}} class="profile-field" id="phone" maxlength="50" />
+                </div>
+
+                <div class="ui error message">
+                </div>
+            </form>
+        </div>
+
+        <div class="actions">
+            <button class="ui button primary approve" id="profile-change">
+                Submit
+            </button>
+
+            <div class="ui black grey deny button">
+                Cancel
+            </div>
+        </div>
+    </div>
+</template>

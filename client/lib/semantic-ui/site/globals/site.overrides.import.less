@@ -1,0 +1,418 @@
+/*******************************
+         Site Overrides
+*******************************/
+#main {
+  margin-top: @headerHeight;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+a {
+  color: @blue;
+}
+
+a:hover {
+  color: @blueHover !important;
+}
+
+.main-heading {
+  margin-bottom: @bottomMargin;
+  cursor: pointer;
+  cursor: hand;
+}
+.header {
+  padding-left: @headerPadding !important;
+  padding-right: @headerPadding !important;
+}
+#login-dropdown-list {
+  width: @loginFormWidth;
+}
+#login-email, #login-password, #login-name, #forgot-password-email, #login-old-password, #login-first_name, #login-last_name, #login-phone-label-and-input{
+  width: @loginFormInputWidth;
+}
+#forgot-password-link{
+  margin-top: 10px;
+}
+.notification {
+  margin-top: @notificationMarginTop !important;
+  height: @notificationHeight !important;
+  margin-right: @notificationMarginRight !important;
+}
+
+.custom-header {
+  background-color: @darkGray !important;
+}
+
+.ui.menu .ui.dropdown .menu > .item.nottxt {
+  font-size: 14px !important;
+}
+
+.reput-badge-icon:before {
+  position: absolute !important;
+  margin-top: 8px !important;
+  font-size: 1.2em !important;
+  padding-right: 2px !important;
+}
+
+.search-bar-input {
+  height: 28px !important;
+  width: 317px !important;
+}
+
+.ui.search > .results {
+  left: 12% !important;
+  width: 296px !important;
+}
+
+.search-bar-input-text:focus {
+  border-width: 0px !important;
+}
+
+.ui.search > .results .result .title {
+  color: @blue !important;
+}
+
+.div-search-bar {
+  padding: 0 38px !important;
+}
+
+.ui.input.focus input, .ui.input input:focus {
+  border-color: @blue;
+}
+
+.custom-heading {
+  padding: 1.2em 0 !important;
+  text-align: center !important;
+  color: @darkGray !important;
+}
+
+.load-more {
+  display: block;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px; }
+.load-more:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.content.profile {
+  width: 85% !important; ;
+}
+
+.content-div {
+  width: 40% !important;
+}
+
+.description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.question-voting-content, .question-upvoteicon, .question-downvoteicon {
+  width: 50px;
+}
+
+.question-voting-content {
+  height: @questionVotingContentHeight;
+  padding-right: 14px;
+}
+
+.question-upvoteicon {
+  height: @questionVotingContentHeight/2 - 14 - 14/2px;
+}
+.question-downvoteicon {
+  height: @questionVotingContentHeight/2 - 14 - 14/2px;
+}
+
+.question-downvoteicon, .question-upvoteicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-votes-count{
+  color: grey;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.pointer {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.question-summary {
+  height: @questionVotingContentHeight;
+  text-align:center;
+  float:right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-top: 14px;
+  width: 20%;
+}
+
+input:focus, textarea:focus {
+  border-color: @blue;
+}
+
+.delete {
+  margin-right: -30px !important;
+}
+
+.errors {
+  z-index: 10000;
+  right: 0;
+  float: right;
+  position: fixed;
+  width: auto;
+}
+
+.alert-content{
+  max-width: 93%;
+}
+
+.notfound {
+  font-size: 2em;
+  text-align: center;
+}
+
+.ui.huge.header {
+  color: grey;
+}
+.notfound p {
+  color: grey;
+  font-size: 0.8em;
+}
+
+#login-dropdown .ui.active.loader {
+  margin-top: -42px;
+}
+/* profile settings need to be changed or removed when more things will be added */
+.ui.modal > .image.content {
+  width: 89%;
+}
+
+.ui.modal.profile {
+  width: 35%;
+  margin-left: 0px;
+}
+
+.picture-div {
+  margin: 0 auto;
+}
+
+.ui.modal.profile .header, .ui.modal.profile .actions {
+  text-align: center;
+}
+
+input[type='file'] {
+  display:none;
+}
+/*************************************************/
+
+.metadata {
+  display: block;
+  margin-left: 0em;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875em;
+}
+
+.table {
+  display: table !important;
+  font-size: 0.875em !important;
+}
+
+.table-row {
+  display: table-row !important;
+}
+
+.table-cell {
+  display: inline-table !important;
+}
+
+.padleft4 {
+  padding-left: 4px;
+}
+
+.padleft6 {
+  padding-left: 6px;
+}
+
+.solved {
+  margin-left: -13px !important;
+  position: absolute !important;
+}
+
+.clickable{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.country-dropdown {
+  min-height: 13px !important;
+  width: 17% !important;
+}
+
+.region-dropdown {
+  min-height: 13px !important;
+  width: 25% !important;
+  margin-top: -38px !important;
+  margin-left: 250px !important;
+}
+
+.city-dropdown {
+  min-height: 13px !important;
+  width: 43% !important;
+  margin-top: -38px !important;
+  margin-left: 585px !important;
+}
+
+.location-menu {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.ui.label.cus-tag{
+  background-color: @blue !important;
+  color: @white !important;
+}
+
+.cus-tag.para{
+  display: inline-flex !important;
+}
+
+.tags-title {
+  padding-right: 5px;
+}
+
+.search-map {
+  margin-left: 5%;
+  width: 300px;
+}
+
+.map-note {
+  float: right;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.attach-question-image {
+  font-size: 2em !important;
+  margin-left: 34% !important;
+  color: @blue;
+  cursor: pointer !important;
+  cursor: hand !important;
+}
+
+#login-buttons-facebook{
+  background-color: #3b5998 !important;
+  color: white !important;
+  width: 234px !important;
+}
+
+.folder-color {
+  color: purple;
+}
+
+.custom-column {
+  width: 22% !important;
+  padding-bottom: 20px;
+}
+
+.portfolio-title {
+  margin-top: -15px !important;
+}
+
+.custom-input {
+  width: 94% !important;
+}
+
+.building-color {
+  color: saddlebrown;
+  padding-bottom: 15px;
+}
+
+.home-color {
+  color: dimgray;
+}
+
+.content-div-with-stats {
+  width: 80% !important;
+}
+
+.parent-view {
+  width: 100%;
+  text-align: center;
+}
+
+.read-field {
+  font-size: 18px;
+}
+
+.field-view {
+  text-align: center;
+}
+
+.joint-button {
+  padding-top: 20px;
+}
+
+.float-right {
+  float: right;
+}
+
+.restore {
+  margin-left: -17px !important;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.details-heading {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.details {
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.tenant-custom-input {
+  width: 92% !important;
+}
+
+.tenant-field {
+  padding-left: 15px !important;
+}
+
+.content-div-tenant-submit {
+  width: 69% !important;
+}
+
+.tenant-field.email-password {
+  width: 257px !important;
+}
+
+.space {
+  padding-bottom: 40px;
+}

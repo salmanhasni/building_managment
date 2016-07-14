@@ -1,0 +1,64 @@
+<template name="tenantDetails">
+    <div class="ui container">
+        <div class="ui segment center-align">
+            <i class="home icon massive home-color padding-bottom"></i>
+            <form class="ui form">
+                <div class="field">
+
+                    <div class="inline three fields">
+                        <div class="field">
+                            <label class="details-heading">Unit Alias: </label>
+                            <label class="details">{{alias}}</label>
+                        </div>
+                        <div class="field">
+                            <label class="details-heading">Square Footage: </label>
+                            <label class="details">{{sqrfootage}}</label>
+                        </div>
+                        <div class="field">
+                            <label class="details-heading">Number of Residents: </label>
+                            <label class="details">{{residents}}</label>
+                        </div>
+                    </div>
+
+                    <button class="ui button positive" id="edit-unit">Edit</button>
+
+                    <div class="ui section divider"></div>
+                    <h2>Primary Tenant Details</h2>
+                    <div class="inline two fields">
+                        <div class="field">
+                            <label class="details-heading">First Name </label>
+                            <label class="details">{{tenant.first_name}}</label>
+                        </div>
+                        <div class="field">
+                            <label class="details-heading">Last Name: </label>
+                            <label class="details">{{tenant.last_name}}</label>
+                        </div>
+                    </div>
+
+                    <div class="inline two fields">
+                        <div class="field">
+                            <label class="details-heading">Phone Number: </label>
+                            <label class="details">{{tenant.phone}}</label>
+                        </div>
+                        <div class="field">
+                            <label class="details-heading">Email: </label>
+                            <label class="details">{{tenant.email}}</label>
+                        </div>
+                    </div>
+                    {{#if tenant}}
+                        <button class="ui button positive" id="edit-tenant">Edit</button>
+                    {{/if}}
+                    <div class="space"></div>
+
+                    <div class="field-view joint-button">
+                        <div class="ui buttons">
+                            <button class="ui button" id="archive">Archive</button>
+                            <div class="or"></div>
+                            <button class="ui negative button" id="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template name="portfolioItem">
+    {{#if viewArchivePortfolio}}
+        {{#if archive}}
+            <div class="column custom-column center aligned">
+                <i class="folder icon massive folder-color"></i>
+                <i class="reply big icon grey restore" title="restore"></i>
+                <p><h3 class="portfolio-title">{{title}}</h3></p>
+            </div>
+        {{/if}}
+    {{else}}
+        {{#unless archive}}
+            <div class="column custom-column center aligned">
+                <a href="{{pathFor 'buildingPage'}}">
+                    <i class="folder icon massive folder-color"></i>
+                    <p><h3 class="portfolio-title">{{title}}</h3></p>
+                </a>
+            </div>
+        {{/unless}}
+    {{/if}}
+</template>
+

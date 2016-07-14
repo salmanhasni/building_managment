@@ -1,0 +1,15 @@
+<template name="meteorErrors">
+    <div class="errors" style="top-margin:10%">
+        {{#each errors}}
+            {{> meteorError}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="meteorError">
+    <div class="ui negative message">
+        <div class="header">
+        {{message}}
+        </div>
+    </div>
+</template>

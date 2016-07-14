@@ -1,0 +1,67 @@
+<template name="unitEdit">
+    <h2 class="custom-heading ui center aligned header">
+        Edit Unit
+    </h2>
+
+    <div class="ui container content-div-with-stats">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <div class="parent-view">
+                    <i class="home icon massive home-color"></i>
+                </div>
+
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Unit Alias: </label></strong>
+                    <label class="read-field">{{alias}}</label>
+                </div>
+                </p>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Square Footage: </label></strong>
+                    <label class="read-field">{{sqrfootage}}</label>
+                </div>
+                </p>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Number of Residents: </label></strong>
+                    <label class="read-field">{{residents}}</label>
+                </div>
+                </p>
+
+            </div>
+
+            <div class="ui segment">
+
+                <form class="ui form">
+
+                    <div class="field">
+                        <label>Unit Alias</label>
+                        <input value="{{alias}}" name="alias" class="custom-input" id="alias" placeholder="Wealthy" maxlength="50" />
+                    </div>
+
+                    <div class="field">
+                        <label>Square Footage</label>
+                        <input value="{{sqrfootage}}" name="sqrfootage" class="custom-input" id="sqrfootage" placeholder="Decimal Value" maxlength="6" />
+                    </div>
+
+                    <div class="field">
+                        <label>Number of Residents (Including Primary Tenant)</label>
+                        <input value="{{residents}}" name="residents" class="custom-input" id="residents" placeholder="Decimal Value" maxlength="2" />
+                    </div>
+
+                    <div class="ui equal width center aligned padded grid">
+                        <div clas="column">
+                            <button class="ui button primary" type="submit" value="submit">Update</button>
+                            <button class="ui button grey" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="ui error message">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</template>

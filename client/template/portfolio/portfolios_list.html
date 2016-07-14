@@ -1,0 +1,25 @@
+<template name="portfoliosList">
+    <div class="ui container">
+        <div class="ui segment">
+            {{#if viewArchivePortfolio}}
+                <button class="ui active button float-right" id="view-unarchive">
+                    <i class="archive icon"></i>
+                    View Unarchive Portfolios
+                </button>
+            {{else}}
+                <button class="ui active button float-right" id="view-archive">
+                    <i class="archive icon"></i>
+                    View Archive Portfolios
+                </button>
+            {{/if}}
+
+            <div class="ui four column grid">
+                <div class="row">
+                    {{#each portfolio}}
+                        {{> portfolioItem}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

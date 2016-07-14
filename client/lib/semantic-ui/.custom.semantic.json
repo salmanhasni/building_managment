@@ -1,0 +1,14 @@
+{
+  "definitions": {
+    "button": true,
+    "site": true,
+    "icon": true,
+    "search":true,
+    "comment": true,
+    "modal": true
+  },
+  "themes": {
+    "default": true,
+    "chubby": true
+  }
+}

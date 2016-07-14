@@ -1,0 +1,15 @@
+<template name="header">
+    <div class="ui fixed secondary custom-header inverted menu">
+        <a href="{{pathFor 'portfolioPage'}}" class="header item">
+            <label class="main-heading">
+                Building Management System
+            </label>
+        </a>
+        <div class="right menu">
+            {{> loginButtons}}
+        </div>
+        {{#if currentUser}}
+            {{>profileSettings}}
+        {{/if}}
+    </div>
+</template>

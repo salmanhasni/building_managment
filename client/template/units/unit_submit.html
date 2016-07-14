@@ -1,0 +1,61 @@
+<template name="unitSubmit">
+    <div class="ui container content-div-with-stats">
+        <div class="ui horizontal segments">
+
+            <div class="ui segment">
+                <div class="parent-view">
+                    <i class="building icon massive building-color"></i>
+                </div>
+                <p>
+                    <div class="field-view">
+                        <strong><label class="read-field">Address: </label></strong>
+                        <label class="read-field">{{address}}</label>
+                    </div>
+                </p>
+                <p>
+                    <div class="field-view">
+                        <strong><label class="read-field">Owner: </label></strong>
+                        <label class="read-field">{{owner}}</label>
+                    </div>
+                </p>
+
+                <div class="field-view joint-button">
+                    <div class="ui buttons">
+                        <button class="ui positive button" id="edit">Edit</button>
+                        <div class="or"></div>
+                        <button class="ui button" id="archive">Archive</button>
+                        <div class="or"></div>
+                        <button class="ui negative button" id="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui segment">
+                <form class="ui form">
+                    <div class="field">
+                        <label>Unit Alias</label>
+                        <input name="alias" class="custom-input" id="alias" placeholder="Wealthy" maxlength="50" />
+                    </div>
+
+                    <div class="field">
+                        <label>Square Footage</label>
+                        <input name="sqrfootage" class="custom-input" id="sqrfootage" placeholder="Decimal Value" maxlength="6" />
+                    </div>
+
+                    <div class="field">
+                        <label>Number of Residents (Including Primary Tenant)</label>
+                        <input name="residents" class="custom-input" id="residents" placeholder="Decimal Value" maxlength="2" />
+                    </div>
+
+                    <div class="ui equal width center aligned padded grid">
+                        <div clas="column">
+                            <button class="ui button primary" type="submit" value="submit">Create</button>
+                        </div>
+                    </div>
+                    <div class="ui error message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>

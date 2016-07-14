@@ -1,0 +1,26 @@
+<template name="unitList">
+    <div class="ui container">
+        <div class="ui segment">
+
+            {{#if viewArchiveUnits}}
+                <button class="ui active button float-right" id="view-unarchive">
+                    <i class="archive icon"></i>
+                    View Unarchive Units
+                </button>
+            {{else}}
+                <button class="ui active button float-right" id="view-archive">
+                    <i class="archive icon"></i>
+                    View Archive Units
+                </button>
+            {{/if}}
+
+            <div class="ui four column grid">
+                <div class="row">
+                    {{#each unit}}
+                        {{> unitItem }}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

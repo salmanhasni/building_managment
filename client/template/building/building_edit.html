@@ -1,0 +1,53 @@
+<template name="buildingEdit">
+    <h2 class="custom-heading ui center aligned header">
+        Edit Building
+    </h2>
+
+    <div class="ui container content-div-with-stats">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <div class="parent-view">
+                    <i class="building icon massive building-color"></i>
+                </div>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Address: </label></strong>
+                    <label class="read-field">{{address}}</label>
+                </div>
+                </p>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Owner: </label></strong>
+                    <label class="read-field">{{owner}}</label>
+                </div>
+                </p>
+            </div>
+
+            <div class="ui segment">
+
+                <form class="ui form">
+                    <div class="field">
+                        <label>Address Of Building</label>
+                        <input value="{{address}}" name="address" class="custom-input" id="address" placeholder="43-Avenue, EC, Example Country" maxlength="100" />
+                    </div>
+
+                    <div class="field">
+                        <label>Owner Name</label>
+                        <input value="{{owner}}" name="owner" class="custom-input" id="owner" placeholder="Owner" maxlength="50" />
+                    </div>
+
+                    <div class="ui equal width center aligned padded grid">
+                        <div clas="column">
+                            <button class="ui button primary" type="submit" value="submit">Update</button>
+                            <button class="ui button grey" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="ui error message">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</template>

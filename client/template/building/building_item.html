@@ -1,0 +1,20 @@
+<template name="buildingItem">
+    {{#if viewArchiveBuilding}}
+        {{#if archive}}
+            <div class="column custom-column center aligned">
+                <i class="building icon massive building-color"></i>
+                <i class="reply big icon grey restore" title="restore"></i>
+                <p><h3 class="owner-name">Owner Name: {{owner}}</h3></p>
+            </div>
+        {{/if}}
+    {{else}}
+        {{#unless archive}}
+            <div class="column custom-column center aligned">
+                <a href="{{pathFor 'unitPage'}}">
+                    <i class="building icon massive building-color"></i>
+                    <p><h3 class="owner-name">Owner Name: {{owner}}</h3></p>
+                </a>
+            </div>
+        {{/unless}}
+    {{/if}}
+</template>

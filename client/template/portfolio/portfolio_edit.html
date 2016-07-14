@@ -1,0 +1,39 @@
+<template name="portfolioEdit">
+    <h2 class="custom-heading ui center aligned header">
+        Edit Portfolio
+    </h2>
+
+    <div class="ui container content-div-with-stats">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <div class="parent-view">
+                    <i class="folder icon massive folder-color"></i>
+                </div>
+                <div class="field-view">
+                    <strong><label class="read-field">Portfolio Title: </label></strong>
+                    <label class="read-field">{{title}}</label>
+                </div>
+            </div>
+
+            <div class="ui segment">
+
+                <form class="ui form">
+                    <div class="field">
+                        <label>Title of Portfolio</label>
+                        <input name="title" value="{{title}}" class="custom-input" id="title" placeholder="Portfolio Name" maxlength="50" />
+                    </div>
+                    <div class="ui equal width center aligned padded grid">
+                        <div clas="column">
+                            <button class="ui button primary" type="submit" value="submit">Update</button>
+                            <button class="ui button grey" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="ui error message">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</template>

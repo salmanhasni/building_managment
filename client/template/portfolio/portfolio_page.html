@@ -1,0 +1,18 @@
+<template name="portfolioPage">
+    <h2 class="custom-heading ui center aligned header">
+        <div class="ui massive breadcrumb">
+            {{#if viewArchivePortfolio}}
+                <div class="active section">Archive Portfolios</div>
+            {{else}}
+                <div class="active section">Portfolios</div>
+            {{/if}}
+        </div>
+    </h2>
+
+    {{#unless viewArchivePortfolio}}
+        {{>portfolioSubmit}}
+    {{/unless}}
+    <div class="ui section divider"></div>
+
+    {{>portfoliosList}}
+</template>

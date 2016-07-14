@@ -1,0 +1,25 @@
+<template name="buildingList">
+    <div class="ui container">
+        <div class="ui segment">
+            {{#if viewArchiveBuilding}}
+                <button class="ui active button float-right" id="view-unarchive">
+                    <i class="archive icon"></i>
+                    View Unarchive Building
+                </button>
+            {{else}}
+                <button class="ui active button float-right" id="view-archive">
+                    <i class="archive icon"></i>
+                    View Archive Building
+                </button>
+            {{/if}}
+
+            <div class="ui four column grid">
+                <div class="row">
+                    {{#each building}}
+                        {{> buildingItem }}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

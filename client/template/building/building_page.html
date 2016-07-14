@@ -1,0 +1,19 @@
+<template name="buildingPage">
+    <h2 class="custom-heading ui center aligned header">
+        <div class="ui massive breadcrumb">
+            <a class="section" href="/">Portfolios</a>
+            <i class="right chevron icon divider"></i>
+            {{#if viewArchiveBuilding}}
+                <div class="active section">Archive Buildings</div>
+            {{else}}
+                <div class="active section">Buildings</div>
+            {{/if}}
+        </div>
+    </h2>
+    {{#unless viewArchiveBuilding}}
+        {{>buildingSubmit}}
+    {{/unless}}
+    <div class="ui section divider"></div>
+
+    {{>buildingList}}
+</template>

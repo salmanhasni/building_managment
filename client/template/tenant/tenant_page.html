@@ -1,0 +1,20 @@
+<template name="tenantPage">
+    <h2 class="custom-heading ui center aligned header">
+        <div class="ui massive breadcrumb">
+            <a class="section" href="/">Portfolios</a>
+            <i class="right chevron icon divider"></i>
+            <a class="section" href="/portfolios/{{buildingLink}}">Buildings</a>
+            <i class="right chevron icon divider"></i>
+            <a class="section" href="/building/{{unitLink}}">Units</a>
+            <i class="right chevron icon divider"></i>
+            <div class="active section">Unit Details</div>
+        </div>
+    </h2>
+    {{#unless tenant}}
+        {{>tenantSubmit}}
+        <div class="ui section divider"></div>
+    {{/unless}}
+
+    {{>tenantDetails}}
+
+</template>

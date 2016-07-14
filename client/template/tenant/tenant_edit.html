@@ -1,0 +1,83 @@
+<template name="tenantEdit">
+    <h2 class="custom-heading ui center aligned header">
+        Edit Primary Tenant
+    </h2>
+
+    <div class="ui container content-div-with-stats">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <div class="parent-view">
+                    <i class="user icon massive home-color"></i>
+                </div>
+
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">First Name: </label></strong>
+                    <label class="read-field">{{tenant.first_name}}</label>
+                </div>
+                </p>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Last Name: </label></strong>
+                    <label class="read-field">{{tenant.last_name}}</label>
+                </div>
+                </p>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Phone: </label></strong>
+                    <label class="read-field">{{tenant.phone}}</label>
+                </div>
+                </p>
+                <p>
+                <div class="field-view">
+                    <strong><label class="read-field">Email: </label></strong>
+                    <label class="read-field">{{tenant.email}}</label>
+                </div>
+                </p>
+
+            </div>
+
+            <div class="ui segment">
+
+                <form class="ui form">
+
+                        <div class="tenant-field field">
+                            <label>First Name</label>
+                            <input value="{{tenant.first_name}}" name="fname" class="tenant-custom-input" id="fname" placeholder="First Name"/>
+                        </div>
+
+                        <div class="tenant-field field">
+                            <label>Last Name</label>
+                            <input value="{{tenant.last_name}}" name="lname" class="tenant-custom-input" id="lname" placeholder="Last Name"/>
+                        </div>
+
+                        <div class="tenant-field field">
+                            <label>Phone Number</label>
+                            <input value="{{tenant.phone}}" name="phone" class="tenant-custom-input" id="phone" placeholder="Phone Number"/>
+                        </div>
+
+                        <div class="tenant-field field email-password">
+                            <label>Email</label>
+                            <input value="{{tenant.email}}" name="email" class="tenant-custom-input" id="email" placeholder="Email Address"/>
+                        </div>
+
+                        <div class="tenant-field field email-password">
+                            <label>Password</label>
+                            <input name="password" type="password" class="tenant-custom-input" id="password"/>
+                        </div>
+
+                    <div class="ui equal width center aligned padded grid">
+                        <div clas="column">
+                            <button class="ui button primary" type="submit" value="submit">Update</button>
+                            <button class="ui button grey" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="ui error message">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</template>
