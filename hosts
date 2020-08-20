@@ -1,0 +1,62 @@
+127.0.0.1       localhost
+::1             ip6-localhost
+
+192.168.2.20 mobile-dev.justplayss.com
+192.168.2.20 localhost-staging
+192.168.2.20 football.localhost
+192.168.2.20 basketball.localhost
+192.168.2.20 mbball.localhost
+192.168.2.20 wbball.localhost
+192.168.2.20 mlax.localhost
+192.168.2.20 wlax.localhost
+192.168.2.20 msoccer-dev.justplayss.com
+192.168.2.20 football-dev.justplayss.dev
+192.168.2.20 mbball.justplayss.dev
+192.168.2.20 wbball.justplayss.dev
+192.168.2.20 mlax.justplayss.dev
+192.168.2.20 wlax.justplayss.dev
+192.168.2.20 football.justplayss.dev
+192.168.2.20 admin.justplayss.dev
+192.168.2.20 admin-dev.justplayss.com
+192.168.2.20 recruit-dev.justplayss.com
+192.168.2.20 my-dev.justplayss.com
+#99.84.127.121 images-dev.justplayss.com
+#143.204.142.20 videos-dev.justplayss.com
+#52.84.143.136 supportfiles-dev.justplayss.com
+#143.204.142.20 thumbs-dev.justplayss.com
+#54.187.211.130 logging-staging.justplayss.com
+#192.168.2.20 images-dev.justplayss.com
+#192.168.2.20 videos-dev.justpalyss.com
+#192.168.2.20 supportfiles-dev.justplayss.com
+#192.168.2.20 thumbs-dev.justplayss.com
+52.84.143.174 images-dev.justplayss.com
+52.84.143.239 videos-dev.justplayss.com
+52.84.143.136 supportfiles-dev.justplayss.com
+52.84.64.204 thumbs-dev.justplayss.com
+
+54.187.211.130 stats-staging.justplayss.com
+192.168.2.20 justplayss1
+192.168.2.20 justplay4
+35.160.93.95 recruit-prod1.justplayss.com
+107.22.139.197 football.ec2-107-22-139-197.compute-1.amazonaws.com
+107.22.139.197 mbball.ec2-107-22-139-197.compute-1.amazonaws.com
+192.168.2.20       diagramo.dev
+107.22.139.197 football.ec2-107-22-139-197.compute-1.amazonaws.com
+192.168.2.20       stats-dev.justplayss.com
+192.168.2.20       logging-dev.justplayss.com
+192.168.2.20       diagramombball.dev
+192.168.2.20       diagramonew.dev
+192.168.2.20       hdnode01
+192.168.2.20       wbball-dev.justplayss.com
+192.168.2.20       mbball-dev.justplayss.com
+192.168.2.20       football-dev.justplayss.com
+192.168.2.20       mlax-dev.justplayss.com
+192.168.2.20       wlax-dev.justplayss.com
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+192.168.2.20 local.justdo.com app-local.justdo.com
